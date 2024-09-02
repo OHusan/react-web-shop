@@ -1,9 +1,16 @@
-import './App.css'
+import './index.css'
+import { Header } from "./components/Header"
+import { Hero } from "./components/Hero"
 
 function App() {
 
   return (
-    <h1 className="bg-red-500 text-blue-500 text-9xl">Hello world</h1>
+    <>
+      <Header />
+      <main>
+        <Hero />
+      </main>
+    </>
   )
 }
 
