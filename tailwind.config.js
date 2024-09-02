@@ -5,12 +5,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
+        poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
         newAmsterdam: ['New Amsterdam', 'Poppins', 'sans-serif'],
       },
       container: {
         padding: '1rem',
       },
+      colors: {
+        primary: '#C1DCDC'
+      }
     },
   },
   plugins: [],

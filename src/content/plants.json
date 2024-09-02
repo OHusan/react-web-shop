@@ -1,0 +1,32 @@
+[
+  {
+    "img": "image-1.jpg",
+    "name": "Cactus",
+    "value": 200,
+    "description": "A hardy plant that thrives in arid environments, requiring minimal water and care."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Fern",
+    "value": 150,
+    "description": "A lush, green plant that adds a touch of the tropics to any indoor space."
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "Orchid",
+    "value": 300,
+    "description": "An elegant and exotic plant, known for its beautiful and long-lasting flowers."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Succulent",
+    "value": 120,
+    "description": "A low-maintenance plant with thick, water-retaining leaves, perfect for beginners."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "Bonsai",
+    "value": 500,
+    "description": "A miniature tree, meticulously cultivated to create a perfect balance of nature and art."
+  }
+]
