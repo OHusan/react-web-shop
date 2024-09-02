@@ -3,5 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  
+  main {
+    @apply font-nunito;
+  }
+
+  .line {
+    @apply block w-[33px] h-[4px] mb-[5px] bg-black rounded-[3px] origin-[4px_0px] transition-transform duration-500 ease-[cubic-bezier(0.77,0.2,0.05,1.0)];
+  }
+
+  .line:last-child {
+    @apply mb-0;
+  }
+
+  .container {
+    @apply mx-auto
+  }
 }
