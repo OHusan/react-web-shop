@@ -1,3 +1,5 @@
+import HeaderDropdown from "./header/header-dropdown"
+
 export const Header = () => {
   return (
     <header className="container py-10 flex justify-between items-center">
@@ -16,7 +18,7 @@ export const Header = () => {
       <div className="flex justify-between items-center gap-12">
         <img className="hidden lg:block w-6 h-6 cursor-pointer" src="/cart.svg" alt="Shopping cart" />
         <img className="hidden lg:block w-6 h-6 cursor-pointer" src="/user.svg" alt="User" />
-        <span className="hidden lg:block h-6 border-l-2 border-black"></span>
+        <HeaderDropdown />
 
         <button
           id="hamburger"
