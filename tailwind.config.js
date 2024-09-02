@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+        nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
         newAmsterdam: ['New Amsterdam', 'Poppins', 'sans-serif'],
       },
       container: {

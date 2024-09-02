@@ -5,7 +5,7 @@ export const Header = () => {
         <p className="font-newAmsterdam text-[2.375rem] uppercase">Greenmin</p>
 
         <nav className="hidden lg:block">
-          <ul className="flex justify-between items-center gap-12 text-lg">
+          <ul className="flex justify-between items-center gap-12 text-lg font-sans">
             <li className="cursor-pointer">Home</li>
             <li className="cursor-pointer">Products</li>
             <li className="cursor-pointer">Contacts</li>
