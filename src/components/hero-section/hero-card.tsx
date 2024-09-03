@@ -25,9 +25,9 @@ export default () => {
       </div>
 
       <div className="relative flex items-end justify-end">
-        <img className="" src="/rectangle.svg" alt="Rectangle" />
-        <img className="absolute top-[8%] -right--" src="/plant-image.png" alt="Plant image" />
-        <img className="absolute top-[4%] -right-[10%]" src="/spinning-arrow-left.svg" alt="Spinning arrow left" />
+        <img className="hidden lg:block" src="/rectangle.svg" alt="Rectangle" />
+        <img className="absolute top-[8%]" src="/plant-image.png" alt="Plant image" />
+        <img className="absolute top-[2%] right-0 -rotate-[36deg]" src="/spinning-arrow-left.svg" alt="Spinning arrow left" />
         <img className="hidden xl:block absolute bottom-[15%] -left-1/2" src="/spinning-arrow-right.svg" alt="Spinning arrow right" />
       </div>
     </div>

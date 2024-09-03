@@ -15,8 +15,8 @@ export default () => {
   }, [currency])
 
   return (
-    <div className="container flex justify-between mt-24">
-      <div className="max-w-[15.625rem]">
+    <div className="container flex flex-col lg:flex-row text-center gap-9 lg:gap-0 justify-between mt-24">
+      <div className="lg:max-w-[15.625rem] flex justify-center items-center flex-col">
         <p className="text-[2rem] font-bold">Best Selling Plants</p>
         <p className="text-lg font-medium mb-6 opacity-50">
           Easiest way to healthy life by buying your favorite plants
