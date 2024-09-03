@@ -1,30 +1,32 @@
-import plants from "../../content/plants.json"
-import { Plants } from "../../types/plants"
-
-import { Button } from "../Button"
+import { useEffect, useState } from "react";
+import plants from "../../content/plants.json";
+import { Button } from "../Button";
+import { Plants, preferredValue } from "../../types";
+import HeroPlant from "./hero-plant";
 
 export default () => {
-  const sortedPlants = plants.sort((a, b) => Number(b.value) - Number(a.value)).slice(0,3)
+  const [currency, setCurrency] = useState(window.localStorage.getItem(preferredValue) ??  'USD')
+  const sortedPlants = plants.sort((a, b) => Number(b.value) - Number(a.value)).slice(0, 3);
 
-  return(
+  useEffect(() => {
+    window.addEventListener("storage", () => {
+      setCurrency(() => window.localStorage.getItem(preferredValue) ?? 'USD')
+    })
+  }, [currency])
+
+  return (
     <div className="container flex justify-between mt-24">
       <div className="max-w-[15.625rem]">
         <p className="text-[2rem] font-bold">Best Selling Plants</p>
-        <p className="text-lg font-medium mb-6 opacity-50">Easiest way to healthy life by buying your favorite plants </p>
+        <p className="text-lg font-medium mb-6 opacity-50">
+          Easiest way to healthy life by buying your favorite plants
+        </p>
         <Button text="See more" />
       </div>
 
-      {
-        sortedPlants.map((plant: Plants) => {
-          return (
-            <div key={plant.name} className="flex flex-col gap-3">
-              <img src={plant.img} alt={plant.name} className="w-full aspect-[5/6] max-h-[21.25rem]"/>
-              <p className="text-lg font-medium">{plant.name}</p>
-              <p className="text-lg font-medium opacity-50">{plant.value}</p>
-            </div>
-          )
-        })
-      }
+      {sortedPlants.map((plant: Plants) => (
+        <HeroPlant key={plant.name} currency={currency} plant={plant} />
+      ))}
     </div>
-  )
+  );
 }
