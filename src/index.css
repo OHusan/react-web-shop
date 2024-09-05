@@ -18,4 +18,16 @@
   .container {
     @apply mx-auto
   }
+
+  .footer-info ul {
+    @apply flex flex-col gap-6;
+  }
+
+  .footer-info ul li {
+    @apply text-lg opacity-50;
+  }
+
+  .footer-info ul li:first-child{
+    @apply font-bold opacity-100 cursor-pointer;
+  }
 }
