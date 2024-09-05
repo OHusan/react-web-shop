@@ -2,6 +2,7 @@ import './index.css'
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { AboutUs } from "./components/AboutUs"
+import { Category } from "./components/Category"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <main>
         <Hero />
         <AboutUs />
+        <Category />
       </main>
     </>
   )

@@ -21,7 +21,7 @@ export default () => {
         <p className="text-lg font-medium mb-6 opacity-50">
           Easiest way to healthy life by buying your favorite plants
         </p>
-        <Button text="See more" />
+        <Button text="See more" primary/>
       </div>
 
       {sortedPlants.map((plant: Plants) => (
