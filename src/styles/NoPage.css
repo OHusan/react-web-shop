@@ -1,0 +1,135 @@
+.box {
+  @apply absolute left-1/2 top-1/2 h-full max-h-[600px] min-h-[450px] w-[350px] -translate-x-1/2 -translate-y-1/2 bg-purple-600 px-[50px] py-[30px];
+}
+
+.box .box__ghost {
+  @apply absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-[30%] p-[25px] pt-[25px];
+}
+
+.box .box__ghost .symbol:nth-child(1) {
+  @apply opacity-20 [animation:_shine_4s_ease-in-out_3s_infinite] before:rotate-45 after:-rotate-45;
+}
+.box .box__ghost .symbol:nth-child(1)::before,
+.box .box__ghost .symbol:nth-child(1)::after {
+  @apply absolute bottom-[65px] left-0 h-1 w-3 rounded bg-white content-[''];
+}
+
+.box .box__ghost .symbol:nth-child(2) {
+  @apply absolute -left-[5px] top-[30px] h-[18px] w-[18px] rounded-full border-4 border-solid bg-white opacity-20 [animation:_shine_4s_ease-in-out_1.3s_infinite];
+}
+
+.box .box__ghost .symbol:nth-child(3) {
+  @apply opacity-20 [animation:_shine_3s_ease-in-out_.5s_infinite] before:rotate-90 after:rotate-180;
+}
+.box .box__ghost .symbol:nth-child(3)::before,
+.box .box__ghost .symbol:nth-child(3)::after {
+  @apply absolute left-[40px] top-[5px] h-1 w-3 rounded bg-white content-[''];
+}
+
+.box .box__ghost .symbol:nth-child(4) {
+  @apply opacity-20 [animation:_shine_6s_ease-in-out_1.6s_infinite] before:rotate-45 after:-rotate-45;
+}
+.box .box__ghost .symbol:nth-child(4)::before,
+.box .box__ghost .symbol:nth-child(4)::after {
+  @apply absolute right-[30px] top-[10px] h-1 w-[15px] rounded bg-white content-[''];
+}
+
+.box .box__ghost .symbol:nth-child(5) {
+  @apply absolute right-[5px] top-[40px] h-3 w-3 rounded-full border-2 border-solid bg-white opacity-20 [animation:_shine_1.7s_ease-in-out_7s_infinite];
+}
+
+.box .box__ghost .symbol:nth-child(6) {
+  @apply opacity-20 [animation:_shine_2s_ease-in-out_6s_infinite] before:rotate-90 after:rotate-180;
+}
+.box .box__ghost .symbol:nth-child(6)::before,
+.box .box__ghost .symbol:nth-child(6)::after {
+  @apply absolute -right-[5px] bottom-[65px] h-1 w-[15px] rounded bg-white content-[''];
+}
+
+.box .box__ghost .box__ghost-container {
+  @apply relative mx-auto my-0 h-[100px] w-[100px] rounded-t-[100px] bg-white [animation:upndown_3s_ease-in-out_infinite];
+}
+
+.box .box__ghost .box__ghost-container .box__ghost-eyes {
+  @apply absolute left-1/2 top-[45%] h-3 w-[70px];
+}
+.box .box__ghost .box__ghost-container .box__ghost-eyes .box__eye-left {
+  @apply absolute left-0 mx-2.5 my-0 h-3 w-3 rounded-full bg-purple-600;
+}
+.box .box__ghost .box__ghost-container .box__ghost-eyes .box__eye-right {
+  @apply absolute right-0 mx-2.5 my-0 h-3 w-3 rounded-full bg-purple-600;
+}
+
+.box .box__ghost .box__ghost-container .box__ghost-bottom {
+  @apply absolute left-0 right-0 top-full flex;
+}
+.box .box__ghost .box__ghost-container .box__ghost-bottom div {
+  @apply relative -top-2.5 h-5 grow rounded-full bg-white;
+}
+.box .box__ghost .box__ghost-container .box__ghost-bottom div:nth-child(2n) {
+  @apply -top-3 m-0 border-t-[15px] border-solid border-purple-600 bg-transparent;
+}
+
+.box .box__ghost .box__ghost-shadow {
+  @apply mx-auto my-0 h-5 rounded-full shadow-purple-500 [animation:smallnbig_3s_eas-in-out_infinite] [box-shadow:0_50px_15px_5px];
+}
+
+.box .box__description {
+  @apply absolute bottom-[30px] left-1/2 -translate-x-1/2;
+}
+
+.box .box__description .box__description-container {
+  @apply mx-auto my-0 w-[200px] text-center text-white;
+}
+
+.box .box__description .box__description-title {
+  @apply text-2xl tracking-[0.5px];
+}
+
+.box .box__description .box__description-text {
+  @apply mt-5 leading-5;
+}
+
+.box .box__description .box__button {
+  @apply relative mt-[25px] block h-[50px] overflow-hidden whitespace-nowrap rounded-[50px] border border-solid border-transparent bg-pink-500 px-[70px] py-0 text-center text-lg leading-[50px] text-white transition-all duration-500 ease-in-out [mask-image:radial-gradient(white,_black)] hover:border-white hover:bg-transparent;
+}
+.box .box__description .box__button::before {
+  @apply absolute -bottom-[25px] left-0 h-[100px] w-5 -translate-x-[50px] rotate-45 border-2 border-solid border-white bg-white transition-transform duration-500 ease-in-out content-[''] hover:translate-x-[250px] hover:rotate-45;
+}
+
+@keyframes upndown {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes smallnbig {
+  0% {
+    width: 90px;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 90px;
+  }
+}
+@keyframes shine {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

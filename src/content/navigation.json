@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Home",
+    "route": "/"
+  },
+  {
+    "name": "Plants",
+    "route": "/plants"
+  }
+]

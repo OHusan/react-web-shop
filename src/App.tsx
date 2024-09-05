@@ -1,22 +1,21 @@
 import './index.css'
-import { Header } from "./components/Header"
-import { Hero } from "./components/Hero"
-import { AboutUs } from "./components/AboutUs"
-import { Category } from "./components/Category"
-import { Footer } from "./components/Footer"
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Layout } from './pages/Layout'
+import { Home } from './pages/Home'
+import { NoPage } from './pages/NoPage'
+import { Plants } from './pages/Plants'
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <main className="mb-24">
-        <Hero />
-        <AboutUs />
-        <Category />
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/plants" element={<Plants />} />
+        </Route>
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
