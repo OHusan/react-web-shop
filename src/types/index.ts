@@ -1,5 +1,6 @@
-import { Plants } from "./plants"
+import { Plants } from './plants'
+import { Navigation } from './navigation'
 
-export const preferredValue = "preferred-value"
+export const preferredValue = 'preferred-value'
 
-export type {Plants}
+export type { Plants, Navigation }

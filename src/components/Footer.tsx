@@ -1,21 +1,23 @@
-import FooterInformation from "./footer/footer-information"
+import FooterInformation from './footer/footer-information'
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary py-12 ">
-      <div className="container flex flex-col gap-8 lg:flex-row justify-between">
+    <footer className="bg-primary py-12">
+      <div className="container flex flex-col justify-between gap-8 lg:flex-row">
         <div>
           <img src="/logo.svg" alt="Logo" />
-          <p className="my-6 font-medium text-lg opacity-50 max-w-[11.875rem]">We help you find your dream plant</p>
+          <p className="my-6 max-w-[11.875rem] text-lg font-medium opacity-50">
+            We help you find your dream plant
+          </p>
 
           <div className="flex gap-6">
-            <div className="rounded-full border border-black flex items-center justify-center border-opacity-50 w-12 h-12">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black border-opacity-50">
               <img src="/facebook.svg" alt="Facebook" />
             </div>
-            <div className="rounded-full border border-black flex items-center justify-center border-opacity-50 w-12 h-12">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black border-opacity-50">
               <img src="/instagram.svg" alt="Instagram" />
             </div>
-            <div className="rounded-full border border-black flex items-center justify-center border-opacity-50 w-12 h-12">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black border-opacity-50">
               <img src="/twitter.svg" alt="Twitter" />
             </div>
           </div>
