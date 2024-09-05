@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header className="container py-10 flex justify-between items-center">
       <div className="flex justify-between items-center gap-24">
-        <p className="font-newAmsterdam text-[2.375rem] uppercase">Greenmin</p>
+        <img src="/logo.svg" alt="Logo"/>
 
         <nav className="hidden lg:block">
           <ul className="flex justify-between items-center gap-12 text-lg font-sans">
