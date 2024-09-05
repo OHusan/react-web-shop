@@ -4,7 +4,7 @@
 
 @layer base {
   main {
-    @apply font-poppins;
+    @apply font-poppins my-12;
   }
 
   .line {

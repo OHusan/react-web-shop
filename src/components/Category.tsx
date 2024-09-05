@@ -1,13 +1,6 @@
-import { useNavigate } from "react-router-dom"
 import { Button } from './Button'
 
 export const Category = () => {
-  const navigate = useNavigate();
-
-  const handleClick = (path: string) => {
-    navigate(path)
-  }
-
   return (
     <>
       <div className="flex flex-col items-center justify-center">
@@ -35,7 +28,7 @@ export const Category = () => {
           <p className="max-w-[21.875rem] text-lg font-medium opacity-50">
             Horem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <Button text="Explore" onClick={() => handleClick('/plants')} />
+          <Button text="Explore" link="/plants" />
         </div>
       </div>
     </>

@@ -1,7 +1,11 @@
+import PlantsCards from "../components/plants/plants-cards"
+
 export const Plants = () => {
   return (
     <>
-      <h1 className="text-9xl">Hello world</h1>
+      <main className="min-h-screen">
+        <PlantsCards />
+      </main>
     </>
   )
 }
