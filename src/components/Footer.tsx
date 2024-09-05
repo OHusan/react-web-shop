@@ -3,7 +3,7 @@ import FooterInformation from "./footer/footer-information"
 export const Footer = () => {
   return (
     <footer className="bg-primary py-12 ">
-      <div className="container flex justify-between">
+      <div className="container flex flex-col gap-8 lg:flex-row justify-between">
         <div>
           <img src="/logo.svg" alt="Logo" />
           <p className="my-6 font-medium text-lg opacity-50 max-w-[11.875rem]">We help you find your dream plant</p>
@@ -25,7 +25,7 @@ export const Footer = () => {
       </div>
 
       <div className="container mt-24">
-        <p className="text-lg font-bold opacity-40">
+        <p className="text-sm font-bold opacity-40">
           {new Date().getFullYear()} all Right Reserved Term of use <a href="#">GREENMIND</a>
         </p>
       </div>

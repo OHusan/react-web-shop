@@ -1,6 +1,6 @@
 export default () => {
   return (
-    <div className="flex justify-between items-center basis-2/6 footer-info">
+    <div className="flex flex-col gap-8 lg:flex-row justify-between lg:items-center lg:basis-2/6 footer-info">
       <ul>
         <li>Information</li>
         <li>About</li>
