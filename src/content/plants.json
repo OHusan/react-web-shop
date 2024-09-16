@@ -28,5 +28,95 @@
     "name": "Bonsai",
     "value": 500,
     "description": "A miniature tree, meticulously cultivated to create a perfect balance of nature and art."
+  },
+  {
+    "img": "image-1.jpg",
+    "name": "Aloe Vera",
+    "value": 130,
+    "description": "A healing plant known for its soothing gel, perfect for sunburns and skin care."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Spider Plant",
+    "value": 100,
+    "description": "An easy-to-care-for plant that purifies air and adds a vibrant touch to any room."
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "Philodendron",
+    "value": 180,
+    "description": "A beautiful trailing plant with heart-shaped leaves, ideal for hanging baskets."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Snake Plant",
+    "value": 160,
+    "description": "A hardy, low-light plant that requires minimal maintenance, perfect for beginners."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "Peace Lily",
+    "value": 140,
+    "description": "A graceful plant with white blooms, known for purifying the air and thriving in low light."
+  },
+  {
+    "img": "image-1.jpg",
+    "name": "Fiddle Leaf Fig",
+    "value": 250,
+    "description": "A trendy indoor tree with large, glossy leaves that makes a bold statement in any space."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Lavender",
+    "value": 90,
+    "description": "A fragrant herb that produces purple blooms and is often used in aromatherapy."
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "ZZ Plant",
+    "value": 170,
+    "description": "A tough, drought-resistant plant that thrives in low light and needs very little care."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Rubber Plant",
+    "value": 190,
+    "description": "A large, bold plant with shiny, deep green leaves, perfect for adding drama to a room."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "Chinese Evergreen",
+    "value": 160,
+    "description": "A popular houseplant known for its attractive variegated leaves and low-maintenance nature."
+  },
+  {
+    "img": "image-1.jpg",
+    "name": "Pothos",
+    "value": 110,
+    "description": "An adaptable vine with heart-shaped leaves, perfect for hanging baskets or climbing."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Monstera",
+    "value": 210,
+    "description": "A trendy plant with large, split leaves that adds a touch of the tropics to any space."
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "Jade Plant",
+    "value": 140,
+    "description": "A succulent with thick, round leaves that is often seen as a symbol of prosperity."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Boston Fern",
+    "value": 150,
+    "description": "A lush, feathery plant that thrives in humid environments and adds a natural feel to interiors."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "Money Tree",
+    "value": 220,
+    "description": "A braided tree that is believed to bring good luck and prosperity to its owners."
   }
 ]
