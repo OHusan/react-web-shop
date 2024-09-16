@@ -7,10 +7,10 @@ import Sorting from "../general/sorting"
 
 export default () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState("");
   const recordsPerPage = 7;
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
-  const records = plants.slice(firstIndex, lastIndex);
   const npages = Math.ceil(plants.length / recordsPerPage);
   const numbers = [...Array(npages + 1).keys()].slice(1)
 
@@ -32,10 +32,16 @@ export default () => {
     setCurrentPage(number)
   }
 
+  const displayRecords = plants.filter((plant) => {
+    return plant.name.toLowerCase().includes(searchTerm.toLowerCase());
+  })
+
+  const records = displayRecords.slice(firstIndex, lastIndex);
+
   return (
     <>
-      <div className="container bg-primary rounded-3xl py-2 flex justify-between">
-        <Search small classList="basis-1/2"/>
+      <div className="container bg-primary rounded-3xl py-2 flex flex-col xs:flex-row gap-4 justify-between">
+        <Search small classList="basis-1/2" searchTerm={searchTerm} onSearchChange={setSearchTerm} />
         <Sorting />
       </div>
 

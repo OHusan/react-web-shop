@@ -1,10 +1,13 @@
-const Search: React.FC<{ classList?: string, small?: boolean }> = ({ classList, small }) => {
+const Search: React.FC<{ classList?: string, small?: boolean, searchTerm: string, onSearchChange: any }> = ({ classList, small, searchTerm, onSearchChange }) => {
+
   return (
     <div className={`relative max-w-[28.125rem] ${classList}`}>
       <input
+        id="search"
         type="text"
         name="text"
-        id="search"
+        value={searchTerm}
+        onChange={(e) => onSearchChange(e.target.value)}
         placeholder="What are you looking for?"
         className={`w-full rounded-xl ${small ? "p-[10px]" : "p-[18px]"}`}
       />

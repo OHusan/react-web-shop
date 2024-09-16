@@ -118,5 +118,95 @@
     "name": "Money Tree",
     "value": 220,
     "description": "A braided tree that is believed to bring good luck and prosperity to its owners."
+  },
+  {
+    "img": "image-1.jpg",
+    "name": "Bamboo Palm",
+    "value": 130,
+    "description": "A graceful palm with thin stems, known for its air-purifying properties."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Golden Pothos",
+    "value": 120,
+    "description": "A versatile and easy-to-grow vine with golden-green leaves."
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "Bird of Paradise",
+    "value": 240,
+    "description": "An exotic plant with large leaves that adds a tropical flair."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Croton",
+    "value": 170,
+    "description": "A vibrant plant with colorful, variegated leaves that brighten up any space."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "Lucky Bamboo",
+    "value": 80,
+    "description": "A popular Feng Shui plant that is said to bring good fortune."
+  },
+  {
+    "img": "image-1.jpg",
+    "name": "Eucalyptus",
+    "value": 110,
+    "description": "A fragrant plant that is often used for its essential oils and fresh scent."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Palm Tree",
+    "value": 300,
+    "description": "A tall indoor tree that brings a bit of the outdoors inside."
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "Hoya",
+    "value": 140,
+    "description": "A trailing vine known for its thick, waxy leaves and clusters of star-shaped flowers."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Umbrella Plant",
+    "value": 190,
+    "description": "A popular houseplant with umbrella-like leaf clusters that add visual interest."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "English Ivy",
+    "value": 100,
+    "description": "A trailing vine that looks great in hanging baskets or as a climbing plant."
+  },
+  {
+    "img": "image-1.jpg",
+    "name": "Dwarf Palm",
+    "value": 250,
+    "description": "A compact palm tree perfect for indoors, adding a tropical feel."
+  },
+  {
+    "img": "image-2.jpg",
+    "name": "Pilea",
+    "value": 90,
+    "description": "A small, cute plant with round leaves, often called the 'friendship plant.'"
+  },
+  {
+    "img": "image-3.jpg",
+    "name": "Rubber Tree",
+    "value": 160,
+    "description": "A large, easy-care plant with thick, dark green leaves."
+  },
+  {
+    "img": "image-4.jpg",
+    "name": "Elephant Ear",
+    "value": 200,
+    "description": "A dramatic plant with large leaves that resemble elephant ears."
+  },
+  {
+    "img": "image-5.jpg",
+    "name": "Calathea",
+    "value": 180,
+    "description": "A plant with intricately patterned leaves that move in response to light."
   }
 ]

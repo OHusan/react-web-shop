@@ -16,20 +16,20 @@ export const Pagination:
     return (
       <nav className="w-full flex items-center justify-center mt-8">
         <ul className="flex items-center justify-center gap-3 p-2 w-fit rounded-md pagination-shadow text-sm">
-          <li className="p-2">
-            <a href="#" onClick={prevPage}>Prev</a>
+          <li className="cursor-pointer p-2" onClick={prevPage}>
+            Prev
           </li>
           {
             numbers.map((number) => {
               return (
-                <li key={number} className={`cursor-pointer flex items-center justify-center transition-colors duration-300 w-[2.6rem] h-[2.6rem] rounded-md p-2 ${currentPage === number ? 'bg-primary' : ''}`}>
-                  <a onClick={() => changeCurrentPage(number)}>{number}</a>
+                <li key={number} onClick={() => changeCurrentPage(number)} className={`cursor-pointer flex items-center justify-center transition-colors duration-300 w-[2.6rem] h-[2.6rem] rounded-md p-2 ${currentPage === number ? 'bg-primary' : ''}`}>
+                  {number}
                 </li>
               )
             })
           }
-          <li>
-            <a href="#" className="p-2" onClick={nextPage}>Next</a>
+          <li className="cursor-pointer p-2" onClick={nextPage}>
+            Next
           </li>
         </ul>
       </nav>
