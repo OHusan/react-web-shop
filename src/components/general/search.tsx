@@ -1,4 +1,4 @@
-const Search: React.FC<{ classList?: string, small?: boolean, searchTerm: string, onSearchChange: any }> = ({ classList, small, searchTerm, onSearchChange }) => {
+const Search: React.FC<{ classList?: string, small?: boolean, searchTerm?: string, onSearchChange?: any }> = ({ classList, small, searchTerm, onSearchChange }) => {
 
   return (
     <div className={`relative max-w-[28.125rem] ${classList}`}>
