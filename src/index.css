@@ -4,7 +4,7 @@
 
 @layer base {
   main {
-    @apply font-poppins;
+    @apply font-poppins my-12;
   }
 
   .line {
@@ -37,5 +37,9 @@
 
   .transition-smooth {
     @apply transition-all duration-300 ease-in-out;
+  }
+
+  .pagination-shadow {
+    @apply [box-shadow:rgba(0,0,0,0.1)_0px_4px_12px];
   }
 }

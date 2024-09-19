@@ -13,6 +13,9 @@ export default {
       },
       colors: {
         primary: '#C1DCDC'
+      },
+      screens: {
+        xs: '420px'
       }
     }
   },
