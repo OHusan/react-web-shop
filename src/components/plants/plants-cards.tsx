@@ -12,18 +12,17 @@ export default () => {
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
   const npages = Math.ceil(plants.length / recordsPerPage);
-  const numbers = [...Array(npages + 1).keys()].slice(1)
 
   const prevPage = (e: Event) => {
     e.preventDefault()
-    if(currentPage !== 1){
+    if (currentPage !== 1) {
       setCurrentPage(currentPage - 1)
     }
   }
 
   const nextPage = (e: Event) => {
     e.preventDefault()
-    if(currentPage !== npages){
+    if (currentPage !== npages) {
       setCurrentPage(currentPage + 1)
     }
   }
@@ -55,7 +54,7 @@ export default () => {
         }
       </div>
       <Pagination
-        numbers={numbers}
+        arrLength={npages}
         prevPage={prevPage}
         nextPage={nextPage}
         changeCurrentPage={changeCurrentPage}
