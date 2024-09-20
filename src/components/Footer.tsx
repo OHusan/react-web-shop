@@ -2,7 +2,7 @@ import FooterInformation from './footer/footer-information'
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary py-12">
+    <footer className="bg-primary py-12 text-black">
       <div className="container flex flex-col justify-between gap-8 lg:flex-row">
         <div>
           <img src="/logo.svg" alt="Logo" />

@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import HeaderDropdown from './header/header-dropdown'
 import navigation from '../content/navigation.json'
 import { Navigation } from '../types'
+import ThemeSwitcher from "./context/theme-switcher"
 
 export const Header = () => {
   return (
@@ -31,17 +32,20 @@ export const Header = () => {
       </div>
 
       <div className="flex items-center justify-between gap-12">
+        <ThemeSwitcher />
+
         <img
           className="hidden h-6 w-6 cursor-pointer lg:block"
           src="/cart.svg"
           alt="Shopping cart"
         />
         <img className="hidden h-6 w-6 cursor-pointer lg:block" src="/user.svg" alt="User" />
+
         <HeaderDropdown />
 
         <button
           id="hamburger"
-          className="no-tap-highlight z-50 cursor-pointer bg-white"
+          className="no-tap-highlight z-50 cursor-pointer bg-white lg:hidden"
           aria-controls="menu"
           aria-label="hamburger-menu"
         >

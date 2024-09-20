@@ -19,7 +19,7 @@ export default () => {
 
   return (
     <select
-      className="active:border-none"
+      className="active:border-none text-black"
       value={selectedValue}
       onChange={(e) => setSelectedValue(e.target.value)}
     >
