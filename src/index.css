@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply dark:bg-secondary text-black dark:text-white;
+  }
+
   main {
     @apply font-poppins my-12;
   }
