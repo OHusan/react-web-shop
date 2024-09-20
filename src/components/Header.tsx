@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import HeaderDropdown from './header/header-dropdown'
 import navigation from '../content/navigation.json'
 import { Navigation } from '../types'
-import { ThemeSwitcher } from "./general/theme-switcher"
+import ThemeSwitcher from "./context/theme-switcher"
 
 export const Header = () => {
   return (
