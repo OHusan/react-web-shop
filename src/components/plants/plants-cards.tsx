@@ -1,6 +1,6 @@
 import { useState } from "react"
 import HeroPlant from "../../components/hero-section/hero-plant"
-import plants from '../../content/plants.json'
+import data from '../../content/plants.json'
 import { Pagination } from "../general/pagination"
 import Search from "../general/search"
 import Sorting from "../general/sorting"
@@ -11,7 +11,7 @@ export default () => {
   const recordsPerPage = 7;
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
-  const npages = Math.ceil(plants.length / recordsPerPage);
+  const npages = Math.ceil(data.length / recordsPerPage);
 
   const prevPage = (e: Event) => {
     e.preventDefault()
@@ -31,7 +31,7 @@ export default () => {
     setCurrentPage(number)
   }
 
-  const displayRecords = plants.filter((plant) => {
+  const displayRecords = data.filter((plant) => {
     return plant.name.toLowerCase().includes(searchTerm.toLowerCase());
   })
 
