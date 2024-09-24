@@ -168,13 +168,13 @@
     "description": "A trailing vine known for its thick, waxy leaves and clusters of star-shaped flowers."
   },
   {
-    "img": "image-4.jpg",
+    "img": "image-2.jpg",
     "name": "Umbrella Plant",
     "value": 190,
     "description": "A popular houseplant with umbrella-like leaf clusters that add visual interest."
   },
   {
-    "img": "image-5.jpg",
+    "img": "image-3.jpg",
     "name": "English Ivy",
     "value": 100,
     "description": "A trailing vine that looks great in hanging baskets or as a climbing plant."
@@ -198,7 +198,7 @@
     "description": "A large, easy-care plant with thick, dark green leaves."
   },
   {
-    "img": "image-4.jpg",
+    "img": "image-2.jpg",
     "name": "Elephant Ear",
     "value": 200,
     "description": "A dramatic plant with large leaves that resemble elephant ears."
