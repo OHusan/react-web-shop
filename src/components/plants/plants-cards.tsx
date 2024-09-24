@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import HeroPlant from "../../components/hero-section/hero-plant"
 import data from '../../content/plants.json'
 import { Pagination } from "../general/pagination"
@@ -11,7 +11,6 @@ export default () => {
   const recordsPerPage = 7;
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
-  const npages = Math.ceil(data.length / recordsPerPage);
 
   const prevPage = (e: Event) => {
     e.preventDefault()
@@ -36,6 +35,10 @@ export default () => {
   })
 
   const records = displayRecords.slice(firstIndex, lastIndex);
+
+  const npages = useMemo(() => {
+    return Math.ceil(displayRecords.length / recordsPerPage)
+  }, [searchTerm])
 
   return (
     <>

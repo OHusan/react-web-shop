@@ -1,7 +1,7 @@
 const Search: React.FC<{ classList?: string, small?: boolean, searchTerm?: string, onSearchChange?: any }> = ({ classList, small, searchTerm, onSearchChange }) => {
 
   return (
-    <div className={`relative max-w-[28.125rem] ${classList}`}>
+    <div className={`relative max-w-[28.125rem] text-black ${classList}`}>
       <input
         id="search"
         type="text"
